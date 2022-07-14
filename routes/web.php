@@ -17,5 +17,5 @@ use App\Http\Controllers\WebcamController;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/webcam', [WebcamController::class, 'index']);
-Route::post('/webcam', [WebcamController::class, 'store'])->name('webcam.capture');
+Route::get('/', [WebcamController::class, 'index']);
+Route::post('/', [WebcamController::class, 'store'])->name('webcam.capture');
